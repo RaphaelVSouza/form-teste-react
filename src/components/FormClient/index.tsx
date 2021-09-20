@@ -49,8 +49,7 @@ const FormClient = () => {
   }
 
   async function getCnpjInfo(cnpj: string) {
-    console.log(cnpj)
-    console.log('aaaaaaaaa')
+
     const cleanedCnpj = cnpj.replace(/[./-]+/g, '')
 
     const corsDemo = process.env.NODE_ENV === 'development' ? 'https://cors-anywhere.herokuapp.com/' : ''
