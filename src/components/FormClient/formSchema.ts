@@ -7,7 +7,7 @@ const schema = Yup.object().shape({
   cnpj:
     Yup
       .string()
-      .matches(cnpjRegex, 'aaaaaaaaaaaaaaaaaaaaaa')
+      .matches(cnpjRegex, 'CNPJ Inválido')
       .required(),
   tradingName:
     Yup
